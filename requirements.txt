@@ -1,0 +1,24 @@
+# Deep Learning Core 
+torch>=1.13.0
+torchvision>=0.14.0
+
+# Computer Vision & Image Processing
+opencv-python
+Pillow
+timm
+scipy
+
+# Hugging Face Ecosystem
+transformers
+peft
+huggingface_hub
+datasets
+
+# Data Science & Metrics
+numpy
+pandas
+scikit-learn
+
+# Utilities / Logging
+tqdm
+wandb
