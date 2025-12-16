@@ -1,8 +1,8 @@
 # [Scaling Up AI-Generated Image Detection with Generator-Aware Prototypes]
 
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/your_paper_id)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2512.12982)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow)](https://huggingface.co/AbyssLumine/GAPL/tree/main)
 ## 💡 Motivation
 
 ![Motivation Framework](assets/overview.jpg)
@@ -109,11 +109,11 @@ scripts/stage2.sh
 If you find our work useful in your research, please consider citing:
 
 ```bibtex
-@article{qin2025GAPL,
+@article{qin2025Scaling,
   title={Scaling Up AI-Generated Image Detection with Generator-Aware Prototypes},
-  author={Your Name and Co-author Name and Co-author Name},
-  journal={arXiv preprint arXiv:24xx.xxxxx},
-  year={2024}
+  author={Qin, Ziheng and Ji, Yuheng and Tao, Renshuai and Tian, Yuxuan and Liu, Yuyang and Wang, Yipu and Zheng, Xiaolong},
+  journal={arXiv preprint arXiv:2512.12982},
+  year={2025}
 }
 ```
 
