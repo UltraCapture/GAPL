@@ -3,6 +3,13 @@
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2512.12982)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow)](https://huggingface.co/AbyssLumine/GAPL/tree/main)
+
+## 🔥 News
+
+[2026.02] 🎉 GAPL has been accepted to CVPR 2026!
+
+[2025.12] 📄 Paper released on arXiv
+
 ## 💡 Motivation
 
 ![Motivation Framework](assets/overview.jpg)

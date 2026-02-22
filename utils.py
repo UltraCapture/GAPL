@@ -296,14 +296,8 @@ def train_one_epoch(
                     taskloss = criterion(outputs, lbl)
                 loss = taskloss
             else:
-                # outputs = model(inputs, return_y=False)
                 outputs = model(inputs)
-                # lbl = labels.unsqueeze(1).to(device=device, dtype=torch.float)
                 taskloss = criterion(outputs, labels)
-                # sep_loss = sep_criterion(outputs[1], labels)
-                # orth_loss = model.module.prop_orth_loss()
-                # proto_loss = s['sep']
-                # balance_loss = s['balance'] 
                 loss = taskloss 
 
         local_loss = local_window_loss.put(loss.item(), returnval=True) # update local window loss
@@ -396,7 +390,7 @@ def evaluate_one_epoch(
             else:
                 inputs, labels, generator_names = unpack_data_and_preprocess(data, device, torch.float32)
 
-            outputs = model(inputs).squeeze()
+            outputs = model(inputs)
             loss = criterion(outputs, labels)
             running_loss += loss.item()
 
