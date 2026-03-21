@@ -14,7 +14,7 @@ torchrun --nproc_per_node=$NUM_GPUS --nnodes=1 --rdzv_id=135 --rdzv_backend=c10d
     --warmup_frac 0.2 \
     --use_amp \
     --verbose 2 \
-    --input_size 384 \
+    --input_size 224 \
     --lr 1e-4 \
     --stageone \
     --exp_name "example_stageone" \
