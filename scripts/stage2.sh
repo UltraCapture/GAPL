@@ -20,3 +20,4 @@ torchrun --nproc_per_node=$NUM_GPUS --nnodes=1 --rdzv_id=123 --rdzv_backend=c10d
     --huggingface_train_repo "OwensLab/CommunityForensics-Small" \
     --exp_name "example" \
     --prototype_path "./prototype/pca_3type_num64.pt" \
+    --fe_path "./pretrained/stage1.pt" \
