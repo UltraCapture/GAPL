@@ -92,10 +92,10 @@ class GAPLModel(nn.Module):
         self.foren_proj = nn.Linear(self.feature_dim, self.foren_dim, bias=False)
         
         if fe_path is not None:
-            fe_ckpt = torch.load(fe_path, map_location='cpu')
-            ukeys, mkeys = self.load_state_dict(fe_ckpt['model'], strict=False)
-            print(ukeys, mkeys)
- 
+            fe_weight = torch.load(fe_path, map_location='cpu')
+            with torch.no_grad():
+                self.foren_proj.weight.copy_(fe_weight)
+            
         self.fc = nn.Linear(self.foren_dim, num_classes, bias=False).to(self.device)
 
     def forward(self, x, return_y=False):
