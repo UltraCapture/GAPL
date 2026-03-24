@@ -390,7 +390,10 @@ def evaluate_one_epoch(
             else:
                 inputs, labels, generator_names = unpack_data_and_preprocess(data, device, torch.float32)
 
-            outputs = model(inputs)
+            # make sure same
+            outputs = model(inputs).squeeze()
+            labels = labels.view(-1)
+
             loss = criterion(outputs, labels)
             running_loss += loss.item()
 
